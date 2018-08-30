@@ -1,0 +1,22 @@
+{
+    "name": "track_referrer/demo",
+    "description": "Demo package for tracking referrer.",
+    "keywords": ["laravel", "demo"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vanilla",
+            "email": "s.jayakumar@vanillanetworks.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "track_referrer\\Demo\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">5.0",
+        "laravel":">5.1",
+        "illuminate/support": "~5"
+    }
+}
