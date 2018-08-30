@@ -16,7 +16,7 @@
     },
     "require": {
         "php": ">5.0",
-        "laravel":">5.1",
+        "laravel":">5.0",
         "illuminate/support": "~5"
     }
 }
