@@ -25,9 +25,10 @@ track_referrer\Demo\DemoServiceProvider::class
 5. Use following code in your controller
 
 $fromurl = $_SERVER['HTTP_REFERRER'];
+
 $urlarray = array();
 
-// Include all the url's that you want to check for redirects.
+Include all the url's that you want to check for redirects from.
 
 $urlarray[] = "https://www.google.co.in";
 $urlarray[] = "https://www.yahoo.co.in";
@@ -39,3 +40,23 @@ if(!$checkrefer)
   echo 'Not Redirected from any of the sites';
 else
   echo $checkrefer;
+
+6. Results
+
+statusCode: 100
+statusMessage: Error: Invalid Number Of Arguments Passed
+
+statusCode: 101
+statusMessage: Error: Second Parameter Should Be Array
+
+statusCode: 102
+statusMessage: Error: First Parameter Should Be Valid URL
+
+statusCode: 103
+statusMessage: Error: Element Of Second Parameter Is Not A Valid URL
+
+statusCode: 200
+statusMessage: Success: Visitor redirected from url
+
+statusCode: 201
+statusMessage: Error: Visitor not redirected from any of the mentioned urls
