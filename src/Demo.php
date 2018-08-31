@@ -70,7 +70,5 @@ class Demo
         $result['statusCode'] = '201';
         $result['statusMessage'] = 'Error: Visitor not redirected from any of the mentioned urls';
         return json_encode($result);
-
-        return false;
     }
 }
