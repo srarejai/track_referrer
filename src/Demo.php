@@ -69,7 +69,7 @@ class Demo
         $result= [];
         $result['statusCode'] = '201';
         $result['statusMessage'] = 'Error: Visitor not redirected from any of the mentioned urls';
-        return jscon_encode($result);
+        return json_encode($result);
 
         return false;
     }
