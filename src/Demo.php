@@ -20,7 +20,7 @@ class Demo
           $result = [];
           $result['statusCode'] = '100';
           $result['statusMessage'] = 'Error: Invalid Number Of Arguments Passed';
-          return jscon_encode($result);
+          return json_encode($result);
         }
 
         /**** Check if second parameter is valid array ****/
@@ -30,7 +30,7 @@ class Demo
             $result= [];
             $result['statusCode'] = '101';
             $result['statusMessage'] = 'Error: Second Parameter Should Be Array';
-            return jscon_encode($result);
+            return json_encode($result);
         }
 
         /**** Check if first parameter is a valid url ****/
@@ -39,7 +39,7 @@ class Demo
             $result= [];
             $result['statusCode'] = '102';
             $result['statusMessage'] = 'Error: First Parameter Should Be Valid URL';
-            return jscon_encode($result);
+            return json_encode($result);
         }
 
 
@@ -51,7 +51,7 @@ class Demo
             $result= [];
             $result['statusCode'] = '103';
             $result['statusMessage'] = "Error: Element ".$key. ' Of Second Parameter Is Not A Valid URL';
-            return jscon_encode($result);
+            return json_encode($result);
           }
         }
 
@@ -61,7 +61,7 @@ class Demo
             $result= [];
             $result['statusCode'] = '200';
             $result['statusMessage'] = 'Success: Visitor redirected from '.$value;
-            return jscon_encode($result);
+            return json_encode($result);
 
           }
         }
